@@ -1,3 +1,4 @@
+
 package asyn.demo;
 
 import java.util.concurrent.ExecutorService;
@@ -27,6 +28,7 @@ public class ExecutorDemo {
 					sum += i;
 				}
 				System.out.println("1+2+3+......+999 = "+sum);
+				executor.shutdown();// 平缓关闭服务
 			}
 		});
 
